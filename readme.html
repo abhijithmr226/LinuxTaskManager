@@ -1,175 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Linux Task Manager - README</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e2f;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0 1.5rem 2rem 1.5rem;
-    line-height: 1.6;
-  }
-  header {
-    background-color: #2e2f48;
-    padding: 1.5rem 1rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: #e0e0ff;
-  }
-  header p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    color: #b0b0d8;
-  }
-  section {
-    margin-bottom: 2rem;
-    background-color: #252538;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-  }
-  h2 {
-    color: #9090ff;
-    border-bottom: 2px solid #6064a9;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
-  }
-  ul, ol {
-    margin-left: 1.5rem;
-  }
-  code, pre {
-    background-color: #33334d;
-    color: #d0d0d8;
-    padding: 0.15rem 0.3rem;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  pre {
-    padding: 1rem;
-    overflow-x: auto;
-  }
-  a {
-    color: #9090ff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .badge {
-    display: inline-block;
-    background-color: #6064a9;
-    color: #e0e0ff;
-    font-weight: bold;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    vertical-align: middle;
-    margin-left: 0.5rem;
-  }
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #6064a9;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #444466;
-  }
-  .btn-link {
-    background-color: #6064a9;
-    color: #e0e0ff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  .btn-link:hover {
-    background-color: #505377;
-  }
-  .screenshot {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 1rem;
-    box-shadow: 0 0 10px #505377;
-  }
-</style>
-</head>
-<body>
-<header>
-  <h1>Linux Task Manager</h1>
-  <p>A lightweight GTK 3-based system monitor and process manager for Linux</p>
-</header>
+# Linux Task Manager
 
-<section>
-  <h2>🚀 Features</h2>
-  <ul>
-    <li><strong>Processes:</strong> View and search running processes by PID or name, with CPU and memory usage.</li>
-    <li>Right-click to end tasks with confirmation dialog.</li>
-    <li><strong>System:</strong> Real-time CPU and RAM usage visualized with level bars.</li>
-    <li><strong>Disk:</strong> Shows mounted partitions with usage statistics.</li>
-    <li><strong>Network:</strong> Displays network interfaces, IP addresses, and data sent/received.</li>
-    <li>Dark-themed, responsive UI with sidebar navigation.</li>
-    <li>Automatic refresh every 3 seconds for up-to-date info.</li>
-  </ul>
-</section>
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?logo=mit&logoColor=white&style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/)
+[![GTK](https://img.shields.io/badge/GTK-476A34?logo=gtk&logoColor=white&style=for-the-badge)](https://www.gtk.org/)
+[![PyPI](https://img.shields.io/pypi/v/psutil?logo=python&logoColor=white&style=for-the-badge)](https://pypi.org/project/psutil/)
+[![GitHub issues](https://img.shields.io/github/issues/yourusername/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/yourusername/linux-task-manager/issues)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/yourusername/linux-task-manager/network)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/yourusername/linux-task-manager/stargazers)
 
-<section>
-  <h2>📋 Requirements</h2>
-  <ul>
-    <li>Python 3.x</li>
-    <li>GTK 3 (PyGObject)</li>
-    <li><code>psutil</code> Python package</li>
-  </ul>
-</section>
+A lightweight GTK 3 application for Linux that provides real-time monitoring and management of system processes, CPU/RAM usage, disk partitions, and network interfaces. It features an intuitive sidebar navigation, searchable process list with kill functionality, and dynamic system info visualizations. Ideal for users seeking a simple yet powerful graphical task manager built with Python and psutil.
 
-<section>
-  <h2>⚙️ Installation</h2>
-  <h3>1. Install system dependencies</h3>
-  <p>On Debian/Ubuntu:</p>
-  <pre><code>sudo apt-get install python3-gi python3-gi-cairo gir1.2-gtk-3.0</code></pre>
-  <p>On Fedora:</p>
-  <pre><code>sudo dnf install python3-gobject gtk3</code></pre>
+---
 
-  <h3>2. Install <code>psutil</code> package</h3>
-  <pre><code>pip3 install psutil</code></pre>
-</section>
+## Table of Contents
 
-<section>
-  <h2>▶️ Usage</h2>
-  <ol>
-    <li>Save the script as <code>linux_task_manager.py</code>.</li>
-    <li>Run the application:</li>
-  </ol>
-  <pre><code>python3 linux_task_manager.py</code></pre>
-  <p>Use the sidebar to navigate between sections. Search and manage processes in the <strong>Processes</strong> tab. Explore system, disk, and network info in their respective tabs.</p>
-</section>
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-<section>
-  <h2>📄 License</h2>
-  <p>This project is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.</p>
-</section>
+---
 
-<section>
-  <h2>🤝 Contributing</h2>
-  <p>Contributions and suggestions are welcome! Please open an issue or submit a pull request on the repository.</p>
-</section>
+## Features
 
-<section>
-  <h2>📞 Contact</h2>
-  <p>For questions or support, open an issue on the project repository or contact the maintainer.</p>
-</section>
+- **Processes**  
+  View running processes with PID, name, CPU %, and memory %.  
+  Search/filter processes by name or PID.  
+  Right-click context menu to end tasks with confirmation.
 
-<footer>
-  <p>Made with ❤️ using Python, GTK, and psutil</p>
-</footer>
-</body>
-</html>
+- **System**  
+  Visual CPU and RAM usage bars updated in real-time.
+
+- **Disk**  
+  List mounted disk partitions with usage statistics.
+
+- **Network**  
+  Display network interfaces with IP addresses and data sent/received.
+
+- Responsive UI with sidebar navigation and dynamic content area.  
+- Periodic UI refresh every 3 seconds.  
+- Custom dark-themed CSS styling.
+
+---
+
+## Requirements
+
+- Python 3.x  
+- GTK 3 (PyGObject)  
+- [psutil](https://pypi.org/project/psutil/) Python package
+
+---
+
+## Installation
+
+### 1. Install system dependencies
+
+**Debian/Ubuntu:**
+
