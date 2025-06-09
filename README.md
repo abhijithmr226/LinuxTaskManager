@@ -1,6 +1,8 @@
 # Linux Task Manager
-https://i.ibb.co/TMRgWFnN/Screenshot-2025-06-09-13-11-10.png
+Screenshots
 
+
+![Screenshot](https://i.ibb.co/TMRgWFnN/Screenshot-2025-06-09-13-11-10.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/)
 [![GTK](https://img.shields.io/badge/GTK-476A34?logo=gtk&logoColor=white&style=for-the-badge)](https://www.gtk.org/)
