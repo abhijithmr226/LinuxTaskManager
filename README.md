@@ -4,9 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)](https://www.python.org/)
 [![GTK](https://img.shields.io/badge/GTK-476A34?logo=gtk&logoColor=white&style=for-the-badge)](https://www.gtk.org/)
 [![PyPI](https://img.shields.io/pypi/v/psutil?logo=python&logoColor=white&style=for-the-badge)](https://pypi.org/project/psutil/)
-[![GitHub issues](https://img.shields.io/github/issues/abhijithmr226/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/abhijithmr226/linux-task-manager/issues)
-[![GitHub forks](https://img.shields.io/github/forks/abhijithmr226/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/abhijithmr226/linux-task-manager/network)
-[![GitHub stars](https://img.shields.io/github/stars/abhijithmr226/linux-task-manager?style=for-the-badge&logo=github)](https://github.com/abhijithmr226/linux-task-manager/stargazers)
 
 A lightweight **GTK 3** application for Linux that provides real-time monitoring and management of:
 
